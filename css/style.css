@@ -1,8 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 /*global style sheet*/
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+html{
+    height: 100%;
+}
 body{
-    min-height: 100vh;
+    min-height: 100%;
     margin: 0;
 
     background-color: #f0f0f0;
@@ -72,6 +76,10 @@ header .right li{
 
 
 /*main*/
+
+main{
+    padding-bottom: 150px;
+}
 h2{
     font-size: 3.2rem;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
