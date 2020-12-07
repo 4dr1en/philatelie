@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+/*global style sheet*/
+
+body{
+    min-height: 100vh;
+    margin: 0;
+
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+/*header*/
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 150px;
+}
+
+    /*left*/
+header .left{
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    margin-right: 30px;
+    height: 60px;
+    transform: rotate(-20deg);
+}
+
+header h1{
+    display: block;
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: 'Dancing Script', cursive;
+}
+
+    /*right*/
+
+header .right ul{
+    display: flex;
+}
+
+header nav a{
+    margin-left: 40px;
+    padding: 10px 30px;
+    
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    color: black;
+    text-decoration: none;
+}
+header nav a.current{
+    color: grey;
+    background-color: white;
+}
+
+header nav a:hover{
+    background-color: white;
+
+    border: 2px solid rgb(187, 187, 187);
+}
+
+header .right li{
+    list-style: none;
+}
+
+
+
+
+/*main*/
+h2{
+    font-size: 3.2rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(47, 47, 47);
+}
+
+
+/*footer*/
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100px;
+    width: 100%;
+
+    background-color: rgb(46, 46, 46);
+    border-top: double 4px  rgb(46, 46, 46);
+    
+    position: absolute;
+    bottom: 0;
+}
+#footerContent{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    color: rgb(226, 226, 226);
+}
+footer ul{
+    display: flex;
+}
+footer li{
+    padding-left: 40px;
+    list-style: none;
+}
+footer a{
+    display: block;
+    color: rgb(226, 226, 226);
+    text-decoration: none;
+}
+
+footer a:hover{
+    transform: scale(1.1);
+}
+
+
+/*snow animation*/
+
+.flake{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: snow;
+    box-shadow: snow 0px 0px 4px;
+
+    position: absolute;
+    top: 0
+}
+
+@keyframes snowFall1{
+    to{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes snowFall2{
+    30%{
+        margin-left: 2vw;
+    }
+    60%{
+        margin-left: -1vh;
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes snowFall3{
+    40%{
+        margin-left: -2vh;
+    }
+    80%{
+        margin-left: 1vh;
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+
+@keyframes snowFall4{
+    25%{
+        margin-left: 1vh;
+    }
+    42%{
+        margin-left: 3vh;
+    }
+    70%{
+        margin-left: 2vh;
+    }
+    to{
+        transform: translateY(0px);
+    }
+}

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>philatélie- Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <script src="js/script.js" defer></script>
+    <script src="js/contact.js" defer></script>
+    <link rel="shortcut icon" href="img/mail.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="img/logo.png" alt="timbre">
+            <h1>Philatélie.fr</h1>
+        </div>
+        <nav class="right">
+            <ul>
+                <a href="index.html">
+                    <li>philatélie</li>
+                </a>
+                <a href="products.html">
+                    <li>la collection</li>
+                </a>
+                <a href="contact.html" class="current">
+                    <li>contact</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h2>Nous contacter</h2>
+            <form action="reception.html" method="GET">
+                <div>
+                    <label for="lastName">Nom :</label><input type="text" name="lastName" id="lastName" required maxlength="100">
+                    <label for="firstName">Prénom :</label><input type="text" name="firstName" id="firstName" required maxlength="100">
+
+                    <label for="country">Pays :</label>
+                    <select name="country" id="country" type="text" required>
+                        <option value="" disabled selected>sélectionnez votre pays</option>
+                        <option value="France">France</option>
+                        <option value="Germany">Allemagne</option>
+                        <option value="Belgium">Belgique</option>
+                        <option value="Spain">Espagne</option>
+                        <option value="Greece">Grece</option>
+                        <option value="Ireland">Irlande</option>
+                        <option value="Italy">Italie</option>
+                    </select>
+                    <p>Genre :</p>
+                    <div id="gender">
+                        <input name="gender" value="female" id="female" type="radio" required><label for="female">Feminin</label>
+                        <input name="gender" value="male" id="male" type="radio" required><label for="male">Masculin</label>
+                        <input name="gender" value="nspp" id="femanspple" type="radio" required><label for="nspp">nspp</label>
+                    </div>
+                    
+                     
+                    <label for="mail">Recevoir notre newsletter :</label>
+                    <input name="mail" id="mail" type="checkbox">
+                </div>
+                
+                <textarea name="message" id="message" cols="30" rows="10">Votre message ici</textarea>
+                <input type="submit" name="send" id="send" value="Envoyer">
+            </form>
+
+        </div>
+    </main>
+    <footer>
+        <div id="footerContent">
+            <div>
+                <p>Philatélie, It-Akademy - décembre 2020</p>
+            </div>
+
+            <div>
+                <ul>
+                    <li><a href="#">minus</a></li>
+                    <li><a href="#">provident odit</a></li>
+                    <li><a href="#">voluptate</a></li>
+                    <li><a href="#">sapiente</a></li>
+                </ul>
+            </div>
+        </div>
+        
+    </footer>
+</body>
+
+</html>

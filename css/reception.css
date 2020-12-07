@@ -1,0 +1,14 @@
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    font-size: 2rem;
+}
+
+.success{
+    color: rgb(0, 199, 10)
+}
+
+.error{
+    color: rgb(255, 28, 28);
+}
